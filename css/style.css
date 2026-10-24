@@ -120,6 +120,30 @@ section {
 }
 
 
+
+.traileri {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.control {
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.control p {
+    line-height: 1.5em;
+}
+
+.control h2 {
+    padding: 0 0 15px 0;
+    margin-top: 0;
+    color: #7F3AC7;
+}
+
+
+
 footer {
     background-color: #090D13;
     padding: 10px 50px;
@@ -153,14 +177,14 @@ li {
 h1 {
     color: #F0F0F0;
     font-weight: 800;
-    padding: 10px 15px 10px 50px;
+    padding: 50px 15px 10px 50px;
     font-size: 50px;
 }
 
 h2 {
     color: #F0F0F0;
     font-weight: 700;
-    padding-top: 15px;
+    padding: 15px 10px 5px 10px;
 }
 
 h3 {
@@ -212,6 +236,10 @@ a:not(.painike):hover {
 
 
 /* Pelit-sivu */
+.pelit-otsikko {
+    padding: 10px 15px 10px 50px;
+}
+
 .peli-navi {
     display: flex;
     gap: 20px;
@@ -261,6 +289,7 @@ a:not(.painike):hover {
 .yhteydenotto {
     display: flex;
     justify-content: space-between;
+    padding: 10px;
 }
 
 .meista {
@@ -270,7 +299,8 @@ a:not(.painike):hover {
 }
 
 .meista p {
-    padding: 0;
+    padding-left: 10px;
+    line-height: 1,5em;
 }
 
 .painike2 {
