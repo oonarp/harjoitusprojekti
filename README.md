@@ -1,1 +1,2 @@
 # harjoitusprojekti
+Hasu harjoitusprojekti
