@@ -104,6 +104,7 @@ section {
     border: 2px solid black;
     border-radius: 5px;
     overflow: hidden;
+    flex-wrap: nowrap;
 }
 
 .pelikortti img {
@@ -239,6 +240,8 @@ button {
     padding: 10px 18px;
     border-radius: 5px;
     color: #F0F0F0;
+    cursor: pointer;
+    border: 0;
 }
 
 a {
@@ -296,6 +299,33 @@ a:not(.painike):hover, a:not(.painike):focus-visible {
     margin: 20px;
 }
 
+/* Taulukko */
+table {
+    width: 50%;
+    color: white;
+    background-color: #090D13;
+    border-collapse: collapse;
+}
+
+caption {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+thead {
+    background-color: #7F3AC7;
+}
+
+th {
+    font-weight: 600;
+}
+
+th, td {
+    border: 1px solid rgb(44, 44, 44);
+    padding: 12px;
+    text-align: left;
+}
+
 
 /* Yhteystiedot-sivu */
 .yhteystiedot-otsikko {
@@ -308,6 +338,10 @@ a:not(.painike):hover, a:not(.painike):focus-visible {
     padding: 10px;
 }
 
+.yhteydenotto ul {
+    margin-left: 5px;
+}
+
 .meista {
     display: flex;
     flex-direction: column;
@@ -317,6 +351,51 @@ a:not(.painike):hover, a:not(.painike):focus-visible {
 .meista p {
     padding-left: 10px;
     line-height: 1.5em;
+}
+
+
+/* Lomake */
+.yhth2 {
+    margin-top: 50px;
+}
+
+form {
+    width: 800px;
+}
+
+fieldset {
+    border: none;
+    padding: 16px 20px 16px 0;
+}
+
+.kentta {
+    margin-bottom: 18px;
+}
+
+input, textarea {
+    color: white;
+}
+
+select {
+    color: gray;
+    margin: 5px 18px 18px 0;
+}
+
+input, select, textarea {
+    display: block;
+    width: 100%;
+    background-color: #090D13;
+    border: 1px solid rgb(44, 44, 44);
+    border-radius: 4px;
+    padding: 14px;
+}
+
+label {
+    color: white;
+}
+
+input:user-invalid, textarea:user-invalid {
+    border: 2px solid red;
 }
 
 .painike2 {

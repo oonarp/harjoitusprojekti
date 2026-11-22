@@ -54,8 +54,34 @@
         </div>
 
         <div class="viesti">
-            <h2>Lähetä viesti</h2>
-            <button class="painike2">Lähetä viesti</button>
+            <h2 class="yhth2">Lähetä viesti</h2>
+            <form action="#" method="viesti">
+            <fieldset>
+                <div class="kentta">
+                    <label for="nimi"></label>
+                    <input type="text" id="nimi" name="nimi" placeholder="Nimi" autocomplete="name" maxlength="100">
+                </div>
+                <div class="kentta">
+                    <label for="sposti"></label>
+                    <input type="email" id="sposti" name="sposti" placeholder="Sähköposti *" autocomplete="email" maxlength="100" required>
+                </div>
+
+                    <label for="aihe">Aihe</label>
+                    <select name="aihe" id="aihe">
+                    <option value="yleinenkysymys">Yleinen kysymys</option>
+                    <option value="parannusehdotus">Parannusehdotus</option>
+                    <option value="maksuasia">Maksuasia</option>
+                    <option value="jotain">Jotain</option>
+                    </select>
+
+                <div class="kentta">
+                    <label for="viesti"></label>
+                    <textarea name="viesti" id="viesti" rows="4" placeholder="Viesti *" required></textarea>
+                </div>
+            </fieldset>
+            </form>    
+
+            <button type="submit" class="painike2">Lähetä viesti</button>
         </div>
     </section>
 
